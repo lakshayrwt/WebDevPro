@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conten3t="width=device-width, initial-scale=1.0">
+    <title>Grid introduction</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 200px 200px;
+            gap: 4px;
+        }
+        .item{
+            background-color: black;
+            border: 1px solid black;
+        }
+        .item1{
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+        .item2{
+            grid-column:3/4;
+            grid-row: 1/3;
+        }
+        .item6{
+            grid-column: 2/4;
+        }
+        .item3>img {
+            object-fit:fill;
+            width: 100%;
+            max-height: 100%;
+        }
+        .item4>img{
+            object-fit:fill;
+            width: 100%;
+            max-height: 100%;
+        }
+        .item5>img{
+            object-fit:fill;
+            width: 100%;
+            max-height: 100%;
+        }
+        .item6>img{
+            object-fit:none;
+            width: 100%;
+            max-height: 100%;
+        }
+        .item2>img{
+            object-fit:fill;
+            width: 100%;
+            max-height: 100%;
+        }
+        .item1>img{
+            object-fit:fill;
+            width: 100%;
+            max-height: 100%;
+        }
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item item1"><img src="https://wallpaperaccess.com/full/1397607.jpg" alt="">Attack on Titan</div>
+        <div class="item item2"><img src="https://i.pinimg.com/originals/cb/51/59/cb515974857094e40078db2d2520112a.jpg" alt="bleach"></div>
+        <div class="item item3"><img src="https://images.squarespace-cdn.com/content/v1/571abd61e3214001fb3b9966/1b0f0c7b-7b0c-412a-8de3-f131c1e07f94/One+Piece+100.jpg" alt="one piece"></div>
+        <div class="item item4"><img src="https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/import/en/comics/naruto/70/cover.jpg" alt="naruto"></div>
+        <div class="item item5"><img src="https://ramenparados.com/wp-content/uploads/2016/03/portada_dragon-ball-color-cell-n-0506_akira-toriyama_2015122411311-300x484.jpg" alt="">dragon ball</div>
+        <div class="item item6"><img src="https://thafd.bing.com/th/id/OIP.-n7Vr1oFc0x3eMvwhXlMowHaEo?rs=1&pid=ImgDetMain" alt="">JoJo's bizzare adventure</div>
+    </div>
+</body>
+</html>
